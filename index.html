@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>René Bade — Links</title>
+  <meta name="description" content="Links zu LinkedIn, Kontakt speichern und Portfolio von René Bade." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --fg: #0a0a0a;
+      --muted: #666;
+      --card: #ffffff;
+      --border: #e8e8e8;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+      background: var(--bg);
+      color: var(--fg);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 520px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+      border: 2px solid var(--border);
+    }
+    h1 {
+      font-size: 22px; line-height: 1.2; margin: 0;
+    }
+    p.subtitle {
+      margin: 6px 0 18px 0; color: var(--muted); font-size: 14px;
+    }
+    .grid {
+      display: grid; gap: 12px; margin-top: 12px;
+    }
+    a.btn {
+      text-decoration: none;
+      display: block;
+      padding: 16px 18px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--fg);
+      font-weight: 600;
+      transition: transform .06s ease, box-shadow .2s ease, border-color .2s ease;
+      text-align: center;
+    }
+    a.btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      border-color: #ddd;
+    }
+    .note {
+      margin-top: 16px; color: var(--muted); font-size: 12px;
+    }
+    footer {
+      margin-top: 18px; text-align: center; color: var(--muted); font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <img src="profile_rene_bade.jpg" alt="René Bade" class="profile-img" />
+      <h1>René Bade</h1>
+      <p class="subtitle">Founder — Design Engineering Manager @ HAVIOR</p>
+
+      <div class="grid">
+        <a class="btn" href="https://www.linkedin.com/in/renebade/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="contact-rene-bade.vcf" download>Contact</a>
+        <a class="btn" href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:4e2ac303-2d43-45ce-9c72-77c5dd1aab31" target="_blank" rel="noopener">Portfolio</a>
+      </div>
+
+      <p class="note">„Contact“ lädt eine .vcf-Datei herunter, die automatisch ins Telefonbuch übernommen werden kann.</p>
+    </section>
+    <footer>© 2025 René Bade</footer>
+  </main>
+</body>
+</html>
